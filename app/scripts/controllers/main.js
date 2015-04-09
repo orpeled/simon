@@ -13,9 +13,9 @@
 angular.module('simonApp')
   .controller('MainCtrl', function ($timeout, ngAudio, $scope) {
     
-    var MAX_ARRAY_SIZE = 2;
+    var MAX_ARRAY_SIZE = 5;
     var currentMoveIndex = 0;
-    var maximumStepsAchievedIndex = 1;
+    var maximumStepsAchievedIndex = 0;
     var speedOfTimeOut = 50;
     var expectedComputerMovesStack = [];
     
@@ -74,7 +74,7 @@ angular.module('simonApp')
             currentMoveIndex++;
             
             // Check if user finished the game
-            if (maximumStepsAchievedIndex === MAX_ARRAY_SIZE) {
+            if (currentMoveIndex === MAX_ARRAY_SIZE) {
                 //User Won
                 angular.element('.win').addClass('fadeInUpBig show');
                 return;
