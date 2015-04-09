@@ -1,0 +1,138 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background-color: #060604;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+    background-color: #060604;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  margin-top: 10%;
+  margin-bottom: 10px;
+    background-color: #060604;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    background-color: #060604;
+    
+}
+
+.footer-block {
+    margin: 20px 0;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+    
+}
+
+/* Simon Says */
+.simon-controls {
+    margin-bottom: 1%;
+}
+
+.btn-start {
+    margin-top: 5%;
+    border: 0px;
+    outline: none;
+}
+
+.btn-game {
+    min-width: 40%;
+    min-height: 4em;
+    margin: 2% 2% 2% 2%;
+    border: 0px;
+    outline: none;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;  
+    -moz-animation-duration: 0.2s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+
+}
+
+
+.simon-img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+        
+}
+.win {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: antiquewhite;
+}

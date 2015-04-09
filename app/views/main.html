@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="simon-contorls" aria-label="simon-controls">
+        <div class="btn-group" role="group">
+            <div class="row animated">
+                <button id="0" data="0" ng-audio="sounds/1.mp3" volume="0.5" start="0" 
+                        type="button" class="btn-lg btn-game btn-success animated" 
+                        ng-click="clickColor($event); $event.stopPropagation();" 
+                        aria-label="Left Align"></button>
+                <button id="1" data="1" ng-audio="sounds/2.mp3" volume="0.5" start="0"
+                        type="button" class="btn-lg btn-game btn-danger animated" 
+                        ng-click="clickColor($event); $event.stopPropagation();" 
+                        aria-label="Right Align"></button>
+            </div>
+            <img class="img-responsive simon-img text-center center" src="images/simon.jpg">
+            <div class="row animated">
+                <button id="2" data="2" ng-audio="sounds/3.mp3" volume="0.5" start="0" 
+                        type="button" class="btn-lg btn-game btn-warning animated" 
+                        ng-click="clickColor($event); $event.stopPropagation();" 
+                        aria-label="Left Align"></button>
+                <button id="3" data="3" ng-audio="sounds/4.mp3" volume="0.5" start="0"
+                        type="button" class="btn-lg btn-game btn-primary animated" 
+                        ng-click="clickColor($event); $event.stopPropagation();" 
+                        aria-label="Right Align"></button>
+            </div>
+            
+            <div class="row">
+                <button type="button" class="btn-lg btn-default btn-start" ng-click="clickReset()">Start</button>
+            </div>
+        </div>
+    </div>
+    <span class="win"><h1>YOU WIN!!</h1></span>
+</div>
