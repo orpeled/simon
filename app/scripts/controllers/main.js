@@ -13,7 +13,7 @@
 angular.module('simonApp')
   .controller('MainCtrl', function ($timeout, ngAudio, $scope) {
     
-    var MAX_ARRAY_SIZE = 5;
+    var MAX_ARRAY_SIZE = 8;
     var currentMoveIndex = 0;
     var maximumStepsAchievedIndex = 0;
     var speedOfTimeOut = 50;
